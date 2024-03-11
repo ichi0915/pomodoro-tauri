@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/output.css" data-trunk rel="css"/>
+		<script type="module" src="js/main.js" defer></script>
+		<script type="module" src="js/sound.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Pomodoro Perron</title>
+	</head>
+
+	<body>
+		<div class="">
+			<div class="flex flex-col items-center justify-center h-screen">
+				<span id="my-sound"></span>
+
+				<h1 class="mb-10">
+					Pomodoro perron By ichi
+				</h1>
+
+				<!-- TimerDisplay -->
+				<div class="flex flex-col space-y-2 items-center">
+					<div class="flex flex-row space-x-3" >
+						<button class="p-2 hover:bg-red-400 hover:text-black border border-red-400 hover:border-transparent" id="decrease5">-5</button>
+						<button class="p-2 hover:bg-red-400 hover:text-black border border-red-400 hover:border-transparent" id="decrease15">-15</button>
+						<button class="p-2 hover:bg-red-400 hover:text-black border border-red-400 hover:border-transparent" id="decrease30">-30</button>
+						<button class="p-2 hover:bg-red-400 hover:text-black border border-red-400 hover:border-transparent" id="decrease1000">-10:00</button>
+						<p class="text-5xl" id="timerDisplay">00:15:00</p>
+						<!-- <p class="text-5xl" id="timerDisplay">00:10</p> -->
+						<button class="p-2 hover:bg-green-400 hover:text-black border border-green-400 hover:border-transparent" id="increase5">+5</button>
+						<button class="p-2 hover:bg-green-400 hover:text-black border border-green-400 hover:border-transparent" id="increase15">+15</button>
+						<button class="p-2 hover:bg-green-400 hover:text-black border border-green-400 hover:border-transparent" id="increase30">+30</button>
+						<button class="p-2 hover:bg-green-400 hover:text-black border border-green-400 hover:border-transparent" id="increase1000">+10:00</button>
+					</div>
+					<p class=""></p>
+				</div>
+
+				<!-- TimerControls -->
+				<div class="flex flex-row space-x-2">
+					<button class="p-3" id="timerStart">
+						<!-- Play button -->
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+						</svg>
+					</button>
+					<!-- <button class="p-3">
+					</button> -->
+					<button type="button" class="p-3" id="timerReset">
+						<!-- Refresh button -->
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
